@@ -46,6 +46,9 @@ section p {
 
 section ul {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; 
 }
 
 section ul li {
@@ -80,8 +83,10 @@ section h3 {
     gap: 0.75rem;
     margin-top: 1rem;
   }
+  section {
+    padding: 2rem 1rem;
 }
-
-section {
-  padding: 2rem 1rem;
+  section ul {
+    grid-template-columns: 1fr; 
+  }
 }
